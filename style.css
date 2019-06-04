@@ -1,7 +1,3 @@
-body{
-	background-color: pink;
-}
-
 /* ==========================================================
 GENERAL CSS
 ========================================================== */
@@ -12,6 +8,34 @@ html{
 a, a:hover{
 	color:inherit;
 	text-decoration: :none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Fjalla One', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h5 {
+    font-size: 32px;
+    color: #F75334;
+    margin-bottom: 15px;
+}
+
+h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #F75334;
+    font-weight: 700;
 }
 
 #cover{
@@ -30,10 +54,126 @@ a, a:hover{
 	border: 1px solid black;
 }
 
+button{
+    display: block;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding: 20px 34px 20px 34px;
+    color: #313131;
+}
+
+
+p {
+    display: inline;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    line-height: 1.75;
+}
+
+
 /* ==========================================================
 BOOTSTRAP
 ========================================================== */
 
+.flexbox {
+    display: flex;
+}
+
 .navbar-collapse{
 	text-align: right;
+}
+
+.jumbotron {
+    height: 702px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-image: url('images/background-jumbotron.jpg');
+    background-position: 100% 67%;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.3);
+    overflow: hidden;
+    margin: 0;
+}
+
+.navbar-dark {
+    background-color: black !important;
+    padding: 0 100px 0 100px;
+    transition: 1.5s;
+}
+
+.nav-item {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    padding: 0 20px 0 20px !important;
+}
+
+.navbar-light {
+    padding: 0 100px 0 100px;
+    transition: 1.5s;
+}
+/* ==========================================================
+CUSTOM CSS
+========================================================== */
+#about-me {
+    background-color: #F8F9FC;
+    padding: 100px 0 100px 0;
+}
+
+.para {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.splash-text {
+    width: 55%;
+    display: inline-block;
+    font-style: italic;
+}
+
+.icon{
+    width: 80%;
+}
+
+.para {
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.contact-icons{
+    width: 50px;
+}
+
+.transparent-button {
+    border: 2px solid white;
+    background-color: transparent;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.transparent-button:hover {
+    border: 2px solid #F75334;
+    background-color: #F75334;
+}
+
+
+/* ==========================================================
+Parrellex CSS
+========================================================== */
+
+#cover {
+  /* The image used */
+  background-image: url("images/sg_city.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
