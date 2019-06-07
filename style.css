@@ -10,7 +10,19 @@ a, a:hover{
 	text-decoration: :none;
 }
 
-h1,
+h1 {
+    position: absolute;
+    top: 2em;
+    left: 2em;
+    font-family: 'Montserrat';
+    font-size: 3em;
+    text-transform: uppercase;
+    width: auto;
+    line-height: .8em;
+    border: 5px solid black;
+    padding: .2em;
+  }
+
 h2,
 h3,
 h4,
@@ -19,10 +31,6 @@ h6 {
     font-family: 'Fjalla One', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1 {
-    font-size: 50px;
 }
 
 h5 {
@@ -43,11 +51,12 @@ h6 {
 }
 
 #about-me{
-	border: 1px solid red;
+	background-color: black;
+  padding: 0 0 0px 0;
 }
 
-#projects{
-	border: 1px solid orange;
+#projects {
+    padding: 100px 0 100px 0;
 }
 
 #contact-me{
@@ -61,8 +70,8 @@ button{
     font-weight: 700;
     padding: 20px 34px 20px 34px;
     color: #313131;
+    margin: 0 auto;
 }
-
 
 p {
     display: inline;
@@ -78,8 +87,10 @@ p {
 BOOTSTRAP
 ========================================================== */
 
+
 .flexbox {
     display: flex;
+    align-items: center;
 }
 
 .navbar-collapse{
@@ -90,8 +101,8 @@ BOOTSTRAP
     height: 702px;
     display: flex;
     align-items: center;
-    color: white;
-    background-image: url('images/background-jumbotron.jpg');
+    color: black;
+    background-image: url('images/method_milk.jpg');
     background-position: 100% 67%;
     background-size: cover;
     background-color: rgba(0,0,0,0.3);
@@ -99,9 +110,20 @@ BOOTSTRAP
     margin: 0;
 }
 
+.container{
+	/*box-shadow: 0 3000px rgba(204, 0, 255, 0.4) inset;*/
+	/*border: 1px solid black;*/
+	width: 60%;
+  /* padding-right: 15px; */
+  /* padding-left: 15px; */
+  padding-bottom: 5px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .navbar-dark {
     background-color: black !important;
-    padding: 0 100px 0 100px;
+    padding: 20px 100px 5px 100px;
     transition: 1.5s;
 }
 
@@ -118,10 +140,6 @@ BOOTSTRAP
 /* ==========================================================
 CUSTOM CSS
 ========================================================== */
-#about-me {
-    background-color: #F8F9FC;
-    padding: 100px 0 100px 0;
-}
 
 .para {
     margin: 0 auto;
@@ -138,7 +156,12 @@ CUSTOM CSS
     width: 80%;
 }
 
-.para {
+.link-button{
+    width: 120px;
+    height: 70px;
+}
+
+.para{
     margin: 0 auto;
     margin-bottom: 50px;
 }
@@ -159,7 +182,43 @@ CUSTOM CSS
     background-color: #F75334;
 }
 
+.screenshot {
+    height: 300px;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #8B8C99;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+}
 
+.screenshot:hover .hidden-content{
+    display:flex;
+}
+
+.screenshot .hidden-content{
+    width:100% ;
+    height: 100%;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display:none;
+    flex-wrap: wrap;
+    border-radius: 4px;
+}
+
+#button-wrapper{
+    flex-basis: 100%;
+}
+
+/*.tint{
+    background-color: rgba(0,0,0,0.6);
+    z-index:1;
+    width:100%;
+    height: inherit;
+    position:absolute;
+}*/
 /* ==========================================================
 Parrellex CSS
 ========================================================== */
@@ -176,4 +235,54 @@ Parrellex CSS
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+
+/* ==========================================================
+MEDIA QUERIES
+========================================================== */
+
+@media (max-width: 540px){
+    .navbar{
+        padding: 0 50px 0 50px !important;
+    }
+    .logo, .logo-transition{
+        width: 150px;
+        height: 100%;
+    }
+    .nav-link{
+        text-align:center;
+    }
+    .jumbotron{
+        background-position: 60% 50%;
+    }
+    .skill-logos{
+        width: 80%;
+        margin-bottom: 25%;
+    }
+    .icon{
+        width: 80%;
+
+    }
+    h1{
+        font-size: 40px;
+    }
+    h5{
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 375px){
+    h1{
+        font-size: 30px;
+    }
+    h5{
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
 }

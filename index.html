@@ -17,12 +17,19 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Open+Sans:400,400i,700" rel="stylesheet" />
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/three.js/102/three.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
     <!-- Styles -->
     <link href="style.css" rel="stylesheet"/>
     <script src="script.js"></script>
+    <style>
+            body { margin: 0; height: 100vh;}
+            canvas { display:block; }
+    </style>
 </head>
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <a class="navbar-brand" href="#">Wei Jun</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -37,37 +44,42 @@
             </div>
         </div>
     </nav>
-
     <section id="cover">
-        <div></div>
+        <!-- <div></div> -->
     </section>
     <section id="about-me">
         <div class="jumbotron jumbotron-fluid">
             <div class="tint">
             </div>
             <div class="container text-center">
-                <h1>FULL STACK <br/>DEVELOPER</h1>
+                <!-- <h1>FULL STACK <br/>DEVELOPER</h1> -->
                 <p class="splash-text text-justify">
-                    Full stack developer, from Singapore. Formerly a mechanical engineer with project management experience. I bring a problem solving mindset and technical understanding. I love working with a team and solving the problems. These skills drive me to create delightful, functional web applications in innovative team environments.
+                    Full stack developer, from Singapore. Formerly a mechanical engineer with project management experience. I bring a problem solving mindset and technical understanding. I love working independently or with a team. Creative problem solving is what I enjoy doing. These skills drive me to create delightful, meaningful and functional web applications to empower the masses.
                 </p>
                 <a href="mailto: weijunshiow@gmail.com">
-                    <button class="transparent-button">
+                    <button class="transparent-button btn btn-light">
                         EMAIL ME
                     </button>
                 </a>
             </div>
         </div>
     </section>
+    <!-- br/><br/> -->
+    <section id="canvas-board">
+
+        <div id="canvas"></div>
+    </section>
+    <!-- <br/><br/> -->
     <section id="more-about-me">
         <div class="tint">
         </div>
         <div class="para col-8 text-justify">
             <p>
-                I've always been interested in technology and its fields of applications. I have always enjoyed the process of creative problem solving.
+                I have always enjoyed the process of creative problem solving.
             </p>
             <br/><br/>
             <p>
-                Having been involved in projects with embedded Internet-of-Things systems. I decided to try to teach myself python. I soon craved for a more structured platform for my learning. Soon thereafter, signed up for the full-time Software Immersive Course by General Assembly .
+                I like technology and I wanted to automate my life. So I decided to try to teach myself python. I soon craved for a more structured platform for my learning. Soon thereafter, signed up for the full-time Software Immersive Course by General Assembly .
             </p>
             <br/><br/>
             <p>
@@ -77,11 +89,122 @@
             <p>
                 Moving forward, I am currently looking for Full-Stack/Front-End/Back-End development positions. I strive to create useful and intuitive applications that would serve to empower the greater masses.
             </p>
-              <h3>Do check out my list of projects thus far</h3>
+            <br/><br/>
+            <br/><br/>
+              <h3>Check out my list of projects below!</h3>
         </div>
     </section>
     <section id="projects">
-        <div>links to other projets </div>
+        <div class="container col-8">
+            <div class="row m-0">
+                <div class="col-lg-5 col-md-12 text-left p-0 mb-5">
+                    <div class="screenshot" style="background-image: url('images/bill_image.jpg')">
+                        <div class="hidden-content">
+                            <div id="button-wrapper">
+                                <a href="#">
+                                    <button class="orange-button link-button">
+                                        Try it!
+                                    </button>
+                                </a>
+                                <br />
+                                <a href="https://github.com/helloimhd/bills">
+                                    <button class="orange-button link-button">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Dullah-Bills
+                    </h6>
+                    <p>
+                        Developed a receipt bill splitting solution using Optical Character Recognition (OCR) API to retrieve data on receipt. ReactJS and classic vanilla CSS with compiled with self-made SCSS libraries for the front-end. PostgreSQL and Express for the back-end, and Node.js for the server environment.
+                    </p>
+                </div>
+                <div class="col-2 p-0">
+                </div>
+                <div class="col-lg-5 col-md-12 text-left p-0 mb-5">
+                    <div class="screenshot" style="background-image: url('images/readdit.png')">
+                        <div class="hidden-content">
+                            <div id="button-wrapper">
+                                <a href="https://readditt.herokuapp.com/">
+                                    <button class="orange-button link-button">
+                                        Try it!
+                                    </button>
+                                </a>
+                                <br />
+                                <a href="https://github.com/valenlyn/Readdit">
+                                    <button class="orange-button link-button">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Readdit
+                    </h6>
+                    <p>
+                        Level up your book reading! Log and share your reviews on what you have read with other like-minded members. Create bookshelves for and record your reading statuses. Made with love using Ruby on Rails and CSS Bootstrap.
+                    </p>
+                </div>
+            </div>
+            <div class="row m-0">
+                <div class="col-lg-5 col-md-12 text-left p-0 mb-5">
+                    <div class="screenshot" style="background-image: url('images/bomber-man.png')">
+                        <div class="hidden-content">
+                            <div id="button-wrapper">
+                                <a href="https://shiowwj.github.io/Another_psuedo-bomberman-/">
+                                    <button class="orange-button link-button">
+                                        Try it!
+                                    </button>
+                                </a>
+                                <br />
+                                <a href="https://github.com/shiowwj/Another_psuedo-bomberman-">
+                                    <button class="orange-button link-button">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        Bomber-Man
+                    </h6>
+                    <p>
+                        A remake of a classic video game. BomberMan, right on the browser. Applied canvas with javascript to allow character movements and object logics in the game. I have always had an interest in moving imagery/ animation and applying javascript to Cartesian coordinates was a refreshingly new exciting experience.
+                    </p>
+                </div>
+                <div class="col-2 p-0">
+                </div>
+                <div class="col-lg-5 col-md-12 text-left p-0 mb-5">
+                    <div class="screenshot" style="background-image: url('images/govoiddeck.png')">
+                        <div class="hidden-content">
+                            <div id="button-wrapper">
+                                <a href="https://onecorner.herokuapp.com/">
+                                    <button class="orange-button link-button">
+                                        Try it!
+                                    </button>
+                                </a>
+                                <br />
+                                <a href="https://github.com/shiowwj/one-corner">
+                                    <button class="orange-button link-button">
+                                        GitHub
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <h6>
+                        GoVoidDeck
+                    </h6>
+                    <p>
+                       Platform for heartland communities to connect, to share ideas and contribute towards the betterment of their neighbourhood.
+                    </p>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="contact-me">
         <div class="para col-8">
@@ -100,5 +223,6 @@
             </div>
         </div>
     </section>
+    <script src="three.js"></script>
 </body>
 </html>
