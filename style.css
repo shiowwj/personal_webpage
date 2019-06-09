@@ -131,6 +131,10 @@ BOOTSTRAP
   margin-left: auto;
 }
 
+.container > a{
+	justify-content: left;
+}
+
 .navbar-dark {
     background-color: black !important;
     padding: 20px 100px 5px 100px;
@@ -156,11 +160,20 @@ CUSTOM CSS
     margin-bottom: 50px;
 }
 
+.text-container{
+	display:flex;
+	/*background-color: green;*/
+	justify-content: center;
+
+}
+
 .splash-text {
     width: 55%;
-    display: inline-block;
+    display: block;
     font-style: italic;
+    font-weight: bolder;
 }
+
 
 .icon{
     width: 80%;

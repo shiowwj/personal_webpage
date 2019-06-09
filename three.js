@@ -52,13 +52,18 @@ for (var i = 0; i < 15; i++) {
     scene.add(sphere);
     sphereX += 1;
 }
-
-var light = new THREE.PointLight(0xFFFFFF, 1, 1000);
+// #CD5849
+var light = new THREE.PointLight(0xCD5849, 0.8, 300);
 light.position.set(0, 0, 0);
 scene.add(light);
 
-var light = new THREE.PointLight(0xFFFFFF, 0.4, 1000);
-light.position.set(0, 5, 15);
+// #F9D64F
+var light = new THREE.PointLight(0xF9D64F, 0.4, 1000);
+light.position.set(-10, 5, 15);
+scene.add(light);
+
+var light = new THREE.PointLight(0xF9D64F, 0.4, 1000);
+light.position.set(10, 5, 15);
 scene.add(light);
 
 
@@ -134,10 +139,6 @@ function onMouseMove(event) {
         this.tl.to(intersects[i].object.position, 1, { x: randomNum(evenMoreRandom()), y: randomNum(evenMoreRandom()), ease: Expo.easeOut })
     }
 }
-
-
-
-
 
 // this.tl.to(this.sphere.scale, 1, {x:2, ease:Expo.easeOut})
 
