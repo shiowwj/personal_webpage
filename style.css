@@ -47,6 +47,7 @@ h5 {
     font-size: 32px;
     color: #F75334;
     margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 h6 {
@@ -112,7 +113,8 @@ BOOTSTRAP
     display: flex;
     align-items: center;
     color: black;
-    background-image: url('images/method_milk.jpg');
+    /*background-image: url('images/method_milk.jpg');*/
+    /*background-image: url("images/sg_city.jpg");*/
     background-position: 100% 67%;
     background-size: cover;
     background-color: rgba(0,0,0,0.3);
@@ -248,7 +250,7 @@ Parrellex CSS
 
 #cover {
   /* The image used */
-  background-image: url("images/sg_city.jpg");
+  background-image: url('images/method_milk.jpg');
 
   /* Set a specific height */
   min-height: 500px;
@@ -267,7 +269,7 @@ MEDIA QUERIES
 
 @media (max-width: 540px){
     .navbar{
-        padding: 0 50px 0 50px !important;
+        padding: 0 20px 0 20px !important;
     }
     .logo, .logo-transition{
         width: 150px;
@@ -308,4 +310,13 @@ MEDIA QUERIES
         margin-top: 10px;
         font-size: 15px;
     }
+    .screenshot {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    border: 1px solid #8B8C99;
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+	}
 }
