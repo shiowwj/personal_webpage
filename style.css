@@ -72,7 +72,7 @@ h6 {
 }
 
 #contact-me {
-		border: 1px solid black;
+		/*border: 1px solid black;*/
 }
 
 button {
@@ -141,7 +141,7 @@ BOOTSTRAP
 
 .navbar-dark {
 		background-color: black !important;
-		padding: 20px 100px 5px 100px;
+		padding: 5px 100px 5px 100px;
 		transition: 1.5s;
 }
 
@@ -177,7 +177,7 @@ CUSTOM CSS
 		display: block;
 		font-style: italic;
 		font-weight: bolder;
-		background-color: rgba(255, 255, 255, 0.3);
+		background-color: rgba(255, 255, 255, 0.4);
 		padding: 15px;
 		border-radius: 20px;
 }
@@ -243,10 +243,14 @@ CUSTOM CSS
 		flex-basis: 100%;
 }
 
-.text-center{
-	text-align: center;
+.text-center {
+		text-align: center;
 }
 
+.contact-button:hover{
+	background-color: white;
+	color: black;
+}
 /*.tint{
     background-color: rgba(0,0,0,0.6);
     z-index:1;
@@ -271,11 +275,17 @@ Parrellex CSS
 		background-repeat: no-repeat;
 		background-size: cover;
 }
-#header-about{
-	text-align: center;
+
+#header-about {
+		text-align: center;
 }
-#header-portfolio{
-	text-align: center;
+
+#header-portfolio {
+		text-align: center;
+}
+
+#header-contact {
+		text-align: center;
 }
 
 
@@ -330,6 +340,10 @@ MEDIA QUERIES
 				padding: 15px;
 				border-radius: 20px;
 		}
+		.contact-button:hover{
+	background-color: white;
+	color: black;
+}
 }
 
 @media (max-width: 375px) {
@@ -366,4 +380,8 @@ MEDIA QUERIES
 				background-size: cover;
 				background-position: center;
 		}
+		.contact-button:hover{
+	background-color: white;
+	color: black;
+}
 }
