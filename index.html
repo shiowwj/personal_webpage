@@ -55,7 +55,6 @@
         </div>
     </section>
     <section id="about-me">
-
     </section>
     <!-- br/><br/> -->
     <section id="canvas-board">
@@ -66,10 +65,12 @@
         <div class="tint">
         </div>
         <div class="para col-8 text-justify">
-            <br /><br />
-            <h2>FULL STACK <br />DEVELOPER</h2>
-            <h4>at your service</h4>
-            <br /><br />
+            <div id="header-about">
+                <br /><br />
+                <h2>FULL STACK DEVELOPER</h2>
+                <h4>at your service</h4>
+                <br /><br />
+            </div>
             <p>
                 I have always enjoyed the process of creative problem solving.
             </p>
@@ -87,7 +88,7 @@
             </p>
             <br /><br />
             <br /><br />
-            <h4>Listed below are Projects </h4>
+            <h4 id='header-portfolio'>Portfolio</h4>
             <hr>
         </div>
     </section>
@@ -206,8 +207,65 @@
     <section id="contact-me">
         <div class="para col-8">
             <h5>CONTACT ME</h5>
-            <br />
-            <div class="flexbox">
+            <br><br/>
+            <form name="contact">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Your Name *</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Email *</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Website</label>
+                            <input type="text" class="form-control" name="website">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12">
+                        <div class="form-group">
+                            <label>Budget</label>
+                            <input type="text" class="form-control" name="budget">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 col-xs-12">
+                        <div class="form-group">
+                            <label>Message / Details *</label>
+                            <textarea class="form-control" name="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                <p>
+
+                    <button class="btn btn-dark">Send</button>
+                </p>
+                </div>
+                <div id="return_status"></div>
+            </form>
+        </div>
+    </section>
+    <footer>
+    <div class="wrap" data-children-count="0">
+        <div class="row">
+            <div class="col-md-4 col-xs-12">
+                <p>2019 © Shiow Wei Jun</p>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center footer-job-title">
+                <p><strong>Freelance Web Designer &amp; Developer</strong></p>
+            </div>
+            <div class="col-md-4 col-xs-12 text-right">
+                <div class="flexbox">
                 <a class="contact-icons mr-4" href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=weijunshiow@gmail.com" target="_blank">
                     <img class="icon" src="images/logo-email.svg" /></a>
                 </a>
@@ -218,8 +276,10 @@
                     <img class="icon" src="images/logo-github-gray.svg" />
                 </a>
             </div>
+            </div>
         </div>
-    </section>
+    </div>
+</footer>
     <!-- <script src="three.js"></script> -->
 </body>
 
