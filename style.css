@@ -352,7 +352,7 @@ MEDIA QUERIES
 				background-image: url('images/method_milk.jpg');
 
 				/* Set a specific height */
-				min-height: 500px;
+				/*min-height: 500px;*/
 
 				/* Create the parallax scrolling effect */
 			/*	background-attachment: fixed;
@@ -407,10 +407,66 @@ MEDIA QUERIES
 				background-image: url('images/method_milk.jpg');
 
 				/* Set a specific height */
-				min-height: 500px;
+				/*min-height: 500px;*/
 
 				/* Create the parallax scrolling effect */
-				back/*ground-attachment: fixed;
+			/*	background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;*/
+		}
+}
+
+
+@media (max-width: 390px) {
+		h1 {
+				font-size: 30px;
+		}
+
+		h5 {
+				font-size: 25px;
+				margin-bottom: 5px;
+		}
+
+		p {
+				margin-top: 10px;
+				font-size: 15px;
+		}
+
+		.splash-text {
+				width: 100%;
+				display: block;
+				font-style: italic;
+				font-weight: bolder;
+				background-color: rgba(255, 255, 255, 0.3);
+				padding: 2px;
+				border-radius: 5px;
+		}
+
+		.screenshot {
+				height: 150px;
+				width: 100%;
+				margin-bottom: 25px;
+				border: 1px solid #8B8C99;
+				border-radius: 5px;
+				background-size: cover;
+				background-position: center;
+		}
+
+		.contact-button:hover {
+				background-color: white;
+				color: black;
+		}
+
+		#cover {
+				/* The image used */
+				background-image: url('images/method_milk.jpg');
+
+				/* Set a specific height */
+				/*min-height: 500px;*/
+
+				/* Create the parallax scrolling effect */
+			/*	background-attachment: fixed;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;*/
