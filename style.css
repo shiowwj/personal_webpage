@@ -247,10 +247,11 @@ CUSTOM CSS
 		text-align: center;
 }
 
-.contact-button:hover{
-	background-color: white;
-	color: black;
+.contact-button:hover {
+		background-color: white;
+		color: black;
 }
+
 /*.tint{
     background-color: rgba(0,0,0,0.6);
     z-index:1;
@@ -340,10 +341,25 @@ MEDIA QUERIES
 				padding: 15px;
 				border-radius: 20px;
 		}
-		.contact-button:hover{
-	background-color: white;
-	color: black;
-}
+
+		.contact-button:hover {
+				background-color: white;
+				color: black;
+		}
+
+		#cover {
+				/* The image used */
+				background-image: url('images/method_milk.jpg');
+
+				/* Set a specific height */
+				/*min-height: 500px;*/
+
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+		}
 }
 
 @media (max-width: 375px) {
@@ -380,8 +396,23 @@ MEDIA QUERIES
 				background-size: cover;
 				background-position: center;
 		}
-		.contact-button:hover{
-	background-color: white;
-	color: black;
-}
+
+		.contact-button:hover {
+				background-color: white;
+				color: black;
+		}
+
+		#cover {
+				/* The image used */
+				background-image: url('images/method_milk.jpg');
+
+				/* Set a specific height */
+				/*min-height: 500px;*/
+
+				/* Create the parallax scrolling effect */
+				background-attachment: fixed;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+		}
 }
